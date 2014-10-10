@@ -1,0 +1,25 @@
+{
+  "name": "eng-fes-2014",
+  "version": "1.0.0",
+  "description": "第11回 香川大学工学部祭 ウェブサイト",
+  "main": "gruntfile.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hico-horiuchi/eng-fes-2014.git"
+  },
+  "author": "Akihiko Horiuchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hico-horiuchi/eng-fes-2014/issues"
+  },
+  "homepage": "https://github.com/hico-horiuchi/eng-fes-2014",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.2.0",
+    "gulp-less": "^1.3.6",
+    "gulp-slim": "0.0.10"
+  }
+}
