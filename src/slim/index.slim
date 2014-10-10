@@ -7,13 +7,29 @@ html
     link href="./css/style.min.css" rel="stylesheet"
 
   body
-    .container.main
+    .background-img
+
+    .container.header
       .row
-        .col-xs-12
+        .col-xs-6
           img.img-responsive src="./images/main_image.png"
+        .col-xs-6.header-title
+          h2.bold 第11回 香川大学工学部祭
+          h3.bold.header-icon
+            i.fa.fa-fw.fa-calendar
+            | &nbsp;2014年11月1日(土) 09:30～17:00
+          h3.bold.header-icon
+            i.fa.fa-fw.fa-map-marker
+            | &nbsp;香川大学 林町キャンパス
+          h4.bold.header-sponsor
+            | 後援：
+            | &nbsp;香川大学工学部、香川大学工学部後援会
 
-      footer.footer.center
-        | &copy; 2014 Kagawa University Engineering Festival Executive Committee, All Rights Reserved.
+    .main
+      .container
 
-    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    footer.footer.center
+      span.bold &copy; 2014 Kagawa University Engineering Festival Executive Committee, All Rights Reserved.
+
+  script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
     script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
