@@ -1,4 +1,5 @@
 @import 'mixin';
+@import 'color';
 
 //-- background-image
 .background-img {
@@ -18,9 +19,32 @@
 //-- main contents
 .content {
   background-color: white;
-  .drop-shadow(0, 0, 10px, 0, 0.5);
   .border-radius (10px);
+  .drop-shadow(0, 0, 10px, 0, 0.5);
 }
 
 //-- footer contents
 .footer { .text-shadow(0, 1px, 5px); }
+
+//-- ribbon
+.ribbon-red        { .ribbon        (lighten(@red, 10%), white); }
+.ribbon-red:before { .ribbon-before ( darken(@red, 10%)); }
+.ribbon-red:after  { .ribbon-after  ( darken(@red, 10%)); }
+.ribbon-green        { .ribbon        (lighten(@green, 10%), white); }
+.ribbon-green:before { .ribbon-before ( darken(@green, 10%)); }
+.ribbon-green:after  { .ribbon-after  ( darken(@green, 10%)); }
+.ribbon-blue        { .ribbon        (lighten(@blue, 10%), white); }
+.ribbon-blue:before { .ribbon-before ( darken(@blue, 10%)); }
+.ribbon-blue:after  { .ribbon-after  ( darken(@blue, 10%)); }
+.ribbon-yellow        { .ribbon        (lighten(@yellow, 10%), white); }
+.ribbon-yellow:before { .ribbon-before ( darken(@yellow, 10%)); }
+.ribbon-yellow:after  { .ribbon-after  ( darken(@yellow, 10%)); }
+.ribbon-cyan        { .ribbon        (lighten(@cyan, 10%), white); }
+.ribbon-cyan:before { .ribbon-before ( darken(@cyan, 10%)); }
+.ribbon-cyan:after  { .ribbon-after  ( darken(@cyan, 10%)); }
+.ribbon-lime        { .ribbon        (lighten(@lime, 10%), white); }
+.ribbon-lime:before { .ribbon-before ( darken(@lime, 10%)); }
+.ribbon-lime:after  { .ribbon-after  ( darken(@lime, 10%)); }
+.ribbon-purple        { .ribbon        (lighten(@purple, 10%), white); }
+.ribbon-purple:before { .ribbon-before ( darken(@purple, 10%)); }
+.ribbon-purple:after  { .ribbon-after  ( darken(@purple, 10%)); }
