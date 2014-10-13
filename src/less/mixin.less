@@ -31,14 +31,46 @@
   background:         linear-gradient(@from, @to);
 }
 
-//-- ribbon
-.ribbon (@background: gray, @color: black) {
+//-- arrow
+.arrow (@background: gray, @color: white) {
   background-color: @background;
   color: @color;
+  margin-top: 20px;
+  margin-left: 40px;
+  padding-left: 10px;
+  width: 200px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  position: relative;
+  .text-shadow (0, 2px, 0, 0.25);
+}
+.arrow-before (@color: gray) {
+  position: absolute;
+  left: -16.0%;
+  content: "";
+  border: 20px solid transparent;
+  border-right-color: @color;
+  border-top-color: @color;
+  border-bottom-color: @color;
+}
+.arrow-after (@color: gray) {
+  position: absolute;
+  right: -20%;
+  content: "";
+  border: 20px solid transparent;
+  border-left-color: @color;
+}
+
+//-- ribbon
+.ribbon (@background: gray, @color: white) {
+  background-color: @background;
+  color: @color;
+  margin-top: 0;
   margin-left: -35px;
   margin-right: -20px;
   width: 1010px;
   line-height: 40px;
+  letter-spacing: 0.2em;
   position: relative;
   .border-radius (2px);
   .text-shadow (0, 2px, 0, 0.25);

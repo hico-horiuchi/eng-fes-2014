@@ -26,6 +26,34 @@
 //-- footer contents
 .footer { .text-shadow(0, 1px, 5px); }
 
+//-- arrow
+.arrow-body {
+  margin-left: 20px;
+  line-height: 200%;
+  .text-shadow(0, 0, 5px, 0.25);
+}
+.arrow-red        { .arrow        (@red, white); }
+.arrow-red:before { .arrow-before (@red); }
+.arrow-red:after  { .arrow-after  (@red); }
+.arrow-green        { .arrow        (@green, white); }
+.arrow-green:before { .arrow-before (@green); }
+.arrow-green:after  { .arrow-after  (@green); }
+.arrow-blue        { .arrow        (@blue, white); }
+.arrow-blue:before { .arrow-before (@blue); }
+.arrow-blue:after  { .arrow-after  (@blue); }
+.arrow-yellow        { .arrow        (@yellow, white); }
+.arrow-yellow:before { .arrow-before (@yellow); }
+.arrow-yellow:after  { .arrow-after  (@yellow); }
+.arrow-cyan        { .arrow        (@cyan, white); }
+.arrow-cyan:before { .arrow-before (@cyan); }
+.arrow-cyan:after  { .arrow-after  (@cyan); }
+.arrow-lime        { .arrow        (@lime, white); }
+.arrow-lime:before { .arrow-before (@lime); }
+.arrow-lime:after  { .arrow-after  (@lime); }
+.arrow-purple        { .arrow        (@purple, white); }
+.arrow-purple:before { .arrow-before (@purple); }
+.arrow-purple:after  { .arrow-after  (@purple); }
+
 //-- ribbon
 .ribbon-red        { .ribbon        (lighten(@red, 10%), white); }
 .ribbon-red:before { .ribbon-before ( darken(@red, 10%)); }

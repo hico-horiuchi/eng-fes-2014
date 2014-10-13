@@ -1,0 +1,63 @@
+@import 'mixin';
+
+table.timetable {
+  margin: 20px;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+
+table.timetable th,
+table.timetable td {
+  padding: 10px;
+  height: 75px;
+}
+
+table.timetable th {
+  background: gray;
+  vertical-align: middle;
+  text-align: left;
+  width: 150px;
+  overflow: visible;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  .text-shadow (0, 2px, 0, 0.25);
+}
+
+table.timetable th:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border: 10px solid transparent;
+  border-left-color: gray;
+  margin-top: -10px;
+}
+/* firefox */
+@-moz-document url-prefix() {
+  table.timetable th::after {
+    float: right;
+    padding: 0;
+    left: 30px;
+    top: 10px;
+    content: "";
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: 10px solid transparent;
+    border-left: gray 10px solid;
+    margin-top: -10px;
+  }
+}
+
+table.timetable td {
+  background: lighten(gray, 40%);
+  width: 360px;
+  padding-left: 20px;
+}
