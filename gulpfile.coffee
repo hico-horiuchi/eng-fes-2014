@@ -37,6 +37,6 @@ gulp.task 'watch', ['slim', 'less', 'coffee'], ->
 
 gulp.task 'webserver', ->
   gulp.src './dist/'
-  .pipe webserver livereload: true
+  .pipe webserver livereload: false
 
 gulp.task 'default', ['slim', 'less', 'coffee', 'watch', 'webserver']
