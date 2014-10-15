@@ -1,0 +1,6 @@
+[gulp]
+localhost
+
+[gulp:vars]
+repo=git://github.com/who/sample.git
+project=sample
