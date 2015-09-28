@@ -1,9 +1,0 @@
----
-- hosts: gulp
-  vars:
-    dest: '{{ansible_env.HOME}}/{{project}}'
-    colon: ':'
-  tasks:
-    - include: tasks/git.yml
-    - include: tasks/nginx.yml
-    - include: tasks/service.yml
